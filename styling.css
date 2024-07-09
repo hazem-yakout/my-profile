@@ -8,6 +8,140 @@
   text-decoration: none;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgb(212, 244, 241);
+  color: white;
+}
+
+.logo {
+  color: rgb(58, 58, 255);
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: rgb(58, 58, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main {
+  background-image: url("./im.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.main h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.main span {
+  color: #3498db;
+}
+
+.main h3 {
+  font-size: 1.2em;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: backgroun 0.3s ease;
+}
+
+.main-btn:hover {
+  background: #2980b9;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #3498db;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav a {
+    margin: 10px 0;
+  }
+  .main h2 {
+    font-size: 2em;
+  }
+  .main h3 {
+    font-size: 1em;
+  }
+  .icons a {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px;
+  }
+  .main {
+    padding: 50px 20px;
+  }
+  .main h2 {
+    font-size: 1.5em;
+  }
+  .main h3 {
+    font-size: 0.9em;
+  }
+  .main-btn {
+    padding: 8px 20px;
+  }
+  .icons a {
+    font-size: 1em;
+  }
+}
+/* 
 header {
   background-color: rgb(212, 244, 241);
   width: 100%;
@@ -108,7 +242,7 @@ section {
   color: white;
   font-size: 1.7em;
   padding: 20px;
-}
+} */
 
 .title {
   display: flex;
@@ -126,17 +260,7 @@ section {
   flex-wrap: wrap;
 }
 
-#linkedin {
-  transform: translateY(-30px);
-}
 
-#you {
-  transform: translateX(30px);
-}
-
-#twit {
-  transform: translateX(-30px);
-}
 
 .card {
   background-color: white;
